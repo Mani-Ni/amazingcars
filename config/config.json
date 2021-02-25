@@ -1,0 +1,4 @@
+{	
+	"apiurl":"http://carmarvels.com:5001",
+	"s3url":"https://s3.ap-south-1.amazonaws.com/dev-amazcar/"
+}

@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>Template / Vehicle detail </title>
+      <meta content="" name="description">
+      <meta content="" name="keywords">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta content="telephone=no" name="format-detection">
+      <meta name="HandheldFriendly" content="true">
+      <link rel="stylesheet" href="assets/css/master.css">
+      <link rel="icon" type="image/x-icon" href="favicon.ico">
+      <!--========= Common.css ========== -->
+      <link rel="stylesheet" href="assets/css/common.css">
+      <link rel="stylesheet" href="assets/css/custom.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/loginutil.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/loginmain.css">
+             <!-- dropdown icons -->
+      <link href='https://fonts.googleapis.com/css?family=Lato:400,900,700,300,100' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="//cdn.materialdesignicons.com/1.4.57/css/materialdesignicons.min.css">
+      <!--[if lt IE 9 ]>
+<script src="/assets/js/separate-js/html5shiv-3.7.2.min.js" type="text/javascript"></script><meta content="no" http-equiv="imagetoolbar">
+<![endif]-->
+<style>
+
+    /* Confirmation popup box */
+.modal1 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal1-content {
+    background-color: #fefefe;
+    margin: auto;
+    border: 1px solid #888;
+    width: 65%;
+}
+
+/* The Close Button */
+.close1 {
+    color: #aaaaaa;
+    float: right;
+    padding: 1px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.nav-link{
+        padding:0px 15px !important;
+      }
+  .form-sidebar__btn{
+    right: 26.29rem;
+    top:5px;
+  }
+  .form-sidebar__input{
+ margin-top:0px !important;
+  }
+  .b-dealers-info_1{
+    padding:2em 0em !important;
+  }
+  input[type="checkbox"] {
+    display: unset;
+}
+</style>
+  </head>
+
+  <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
+
+  <body class="page">
+               
+    <!-- Loader-->
+      <div id="page-preloader"><span class="spinner border-t_second_b border-t_prim_a"></span></div>
+    <!-- Loader end-->
+
+      
+    <div class="l-theme animated-css animsition" data-header="sticky" data-header-top="200">
+        <!-- ==========================-->
+        <!-- MOBILE MENU-->
+        <!-- ==========================-->
+     
+        <div data-off-canvas="mobile-slidebar left overlay">
+            <a class="navbar-brand scroll" href="index.html"><img class="scroll-logo" src="assets/media/general/logo-light.png" alt="logo"></a>
+
+
+            <ul class="navbar-nav">
+                <li class="nav-item active"><a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a></li>
+
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+                <li class="nav-item"><a class="nav-link" href="contacts.html">Contact</a></li>
+
+                <li class="nav-item" >
+                        <a class="nav-link"> <button class="login_open login_button" onclick="loginClick();">LOG IN</button> </a>
+                     </li> 
+                <li class="nav-item">
+                        <a class="nav-link"> <button class="login_open login_button" onclick="signupClick();">SIGN UP</button> </a>
+                </li>
+
+                <!-- <li class="nav-item" id=login><button class="login_open login_button" onclick="loginClick();" style="font-family: Montserrat;font-weight: 600;">LOG IN</button></li> 
+                <li class="nav-item" style="margin-left: 15px;" id=signup><button class="login_open login_button" onclick="signupClick();" style="font-family: Montserrat;font-weight: 600;">SIGN UP</button></li>   
+                
+                
+                <ul class="nav navbar-nav" >
+                    <li class="dropdown" style="width:100%;display: inline-flex;" id="user_profile">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown" style="font-size:16px;"><span id=user_name></span> 
+                        <span style="font-size:22px;" class="mdi mdi-account pull-right"></span></a>
+                        <ul class="dropdown-menu" style="margin-right: -17px;">
+                            <li><a href="/profile.html">Account Settings <span style="font-size: 20px;margin-top: 4px;" class="mdi mdi-settings pull-right"></span></a></li>
+                            <li id="logout" ><a href="#"  onclick="logout();">Sign Out <span style="font-size: 20px;margin-top: 4px;" class="mdi mdi-logout pull-right"></span></a></li>
+                        </ul>
+                    </li>
+                </ul> -->
+                
+               
+            </ul>
+
+        </div>
+
+
+        <div data-canvas="container" style="background-color:#f5f5f5;">
+            
+            <header class="header">
+                <div class="top-bar d-none d-xl-block">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col offset-2">
+                                <div class="top-bar__inner row justify-content-between align-items-center">
+                                    <ul class="top-bar__list list-unstyled col">
+                                        <ul class="top-bar__list list-unstyled col">
+                                            <li class="top-bar__item"><a class="top-bar__link" href="mailto:support@domain.com">support@domain.com</a></li>
+                                            <li class="top-bar__item">Mon to Fri : 9:00am to 6:00pm</li>
+                                            <li class="top-bar__item">Fairview Ave, El Monte, CA 91732</li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-main">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-2 col-auto">
+                                <a class="navbar-brand scroll" href="index.html"><img style="width:4em;" class="normal-logo" src="assets/media/general/logo.png" alt="logo"></a>
+                            </div>
+                            <div class="col-lg-auto col">
+                                <button class="menu-mobile-button js-toggle-mobile-slidebar toggle-menu-button d-lg-none"><i class="toggle-menu-button-icon"><span></span><span></span><span></span><span></span><span></span><span></span></i></button>
+                            </div>
+                            <div class="col-lg d-none d-lg-block">
+                                <nav class="navbar navbar-expand-md justify-content-end custom_nav" id="nav">
+
+                                    <ul class="yamm main-menu" style="display: inline-flex;">
+
+                                        <!-- <li class="nav-item">
+                                            <form class="form-sidebar" id="search-global-form">
+                                                <input class="form-sidebar__input form-control" type="search" placeholder="Search">
+                                                <button class="form-sidebar__btn"><i class="ic icon-magnifier"></i></button>
+                                            </form>
+                                        </li> -->
+
+                                        <li class="nav-item active"><a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a></li>
+
+                                        <!-- <li class="nav-item" id=login>
+                                            <button class="login_open login_button" onclick="loginClick();" style="font-family: Montserrat;font-weight: 600;">LOG IN</button>
+                                        </li> 
+                                        <li class="nav-item" style="margin-left: 15px;" id=signup>
+                                            <button class="login_open login_button" onclick="signupClick();" style="font-family: Montserrat;font-weight: 600;">SIGN UP</button>
+                                        </li>    -->
+
+                                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+                                        <li class="nav-item"><a class="nav-link" href="contacts.html">Contact</a></li>
+
+                                        <li class="nav-item" id=login>
+                                            <a class="nav-link"> 
+                                                <button class="login_open login_button cus_loginout" onclick="loginClick();">LOG IN</button> 
+                                            </a>
+                                        </li> 
+                                        <li class="nav-item" id=signup>
+                                            <a class="nav-link"> 
+                                                <button class="login_open login_button cus_loginout" onclick="signupClick();">SIGN UP</button>
+                                            </a>
+                                        </li>   
+                                        
+                                        
+                                        <ul class="nav navbar-nav">
+                                            <li class="dropdown custom_nav" style="width:100%;display: inline-flex;margin-top: -0.23em;" id="user_profile">
+                                                <a href="" class="dropdown-toggle " id="profile_custom" data-toggle="dropdown">
+                                                <span id=user_name></span> 
+                                                <span style="font-size:22px;" class="mdi mdi-account pull-right"></span></a>
+                                                <ul class="dropdown-menu" style="margin-right: -17px;width: 13em;">
+                                                    <li><a href="/profile.html">Account Settings <span style="font-size: 20px;margin-top: 4px;" class="mdi mdi-settings pull-right"></span></a></li>
+                                                    <li id="logout"><a href="#"  onclick="logout();">Sign Out <span style="font-size: 20px;margin-top: 4px;" class="mdi mdi-logout pull-right"></span></a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+          <!-- end .header-->
+    
+        <!-- end .b-title-page-->
+      
+          
+          <div class=container>
+            <section class="b-dealers-info_1">
+                <div class="col-xl-auto"  style="background-color: #ffffff;">
+                  <div class="b-dealers-info__inner">
+                      <!-- <h2 class="ui-title" style="text-align: center">Your Details</h2> -->
+                        <div class="b-dealers-info__header" style="margin-left: 30px;">
+                          <div class="row justify-content-between">
+                            <div class="col">
+                              <h2 class="b-dealers-info__title ui-title-inner">Booking Confirmation</h2>
+                            </div>
+                            <!-- <div class="col-auto"><span class="b-dealers-info__brand b-dealers__brand"><img class="b-dealers-info__brand-img img-fluid" src="assets/media/content/b-brands-2/4.jpg" alt="brand"/></span></div> -->
+                          </div>
+                        </div>
+
+                        <div class="b-dealers-info__contacts-item"> 
+                          <h5 class="b-dealers-info__contacts-title" style="font-size: 20px;">Vehicle Details</h5>
+                                  <!-- append values car Details -->
+                            <div class="b-goods-group row" id="car_list1" style="margin-left:0px;">
+                            </div>
+                        </div>
+                        
+                        <div class="b-dealers-info__contacts-item">
+                          <h5 class="b-dealers-info__contacts-title" style="font-size: 20px;">Location details</h5>
+                            <div class="row">
+                              <div class="col-sm-6">
+                                <div class="b-dealers-info__contacts-title">Pickup Location & Time</div>
+                                <div class="b-dealers-info__contacts-info">
+                                    <div id="pickup_loc" style="text-transform: capitalize;"></div>
+                                    <div id="pickup_date"></div>
+                                    <div id="pickup_time"></div>
+                                </div>
+                              </div>
+                              <div class="col-sm-6">
+                                <div class="b-dealers-info__contacts-title">Drop Location & Time</div>
+                                <div class="b-dealers-info__contacts-info">
+                                    <div id="dropoff_loc" style="text-transform: capitalize;"></div>
+                                    <div id="dropoff_date"></div>
+                                    <div id="dropoff_time"></div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        
+
+                        <div class="b-dealers-info__contacts-item">
+                          <h5 class="b-dealers-info__contacts-title" style="font-size: 20px;">Fare Details</h5><br>
+                                  <!-- Fare Details append -->
+                          <div class="row" id="fare_details">
+                           </div>                      
+                      </div>
+
+                      <div class="b-dealers-info__contacts-item">
+                        <form id="conf_terms_cond">
+                            <input type="checkbox" name="checkbox" id="term_chk"  value="check"/> 
+                            I Agree <a href="terms-conditions.html">Terms & Conditions</a>
+                        </form>
+                      </div>
+
+                      <div class="row"  style="padding:20px;">
+                        <div class="col-md-9"></div>
+                        <div class="col-md-3">
+                          <div class="">
+                            <a class="section-carousel__btn btn btn-primary btn-sm" id="myBtn" style="border:none;color: white;font-weight: 600;" ><i class="ic icon-search"></i>Booking Confirmation</a></div>
+                        </div>
+                     </div>
+                     
+                </div>
+              </div>
+            </section>
+
+
+          <!-- end .b-dealers-info-->
+          <div id="myModal" class="modal1">
+
+              <!-- Modal content -->
+              <div class="modal1-content">
+                      <span class="close1">&times;</span>
+                      
+                      <div style=" padding: 1.78654em;">
+                          <h3 class="h7">Payment Methods</h3><br>
+                          <span>Please select your payment methods...</span>
+
+                          <div>
+                                  <!-- ONLINE  payment-->
+                            <div style="padding: 0.88654em; background-color:#f5f5f5; border: 5px solid #ffffff; cursor:pointer;">
+                                <label style="display:unset; cursor:pointer;">
+                                    <div class="row">  
+
+                                      <div class="col-md-6">
+                                          <input type="radio" class="radio" name="colorRadio" value="online">Online Payment
+                                      </div>
+                                      
+                                       <div class="col-md-6">
+                                          <span style="float:right;">RS.<span id="price_online"></span>.00</span>
+                                       </div>
+                                       
+                                     </div>
+                                </label>
+                            </div>
+                                  <!-- OFFLINE payment -->
+                            <div style="padding: 0.88654em; background-color:#f5f5f5; border: 5px solid #ffffff; cursor:pointer;">
+                                <label style="display:unset; cursor:pointer;">
+                                    <div class="row">  
+                                        <div class="col-md-4">
+                                            <input type="radio" class="radio" name="colorRadio" value="offline" id="offline">Offline Payment
+                                        </div>
+                                        <div class="col-md-4">
+                                            Pay at pick-up
+                                         </div>
+                                         <div class="col-md-4">
+                                            <span style="float:right;">RS.<span id="price_offline"></span>.00</span>
+                                         </div>
+                                        </div>
+                                </label>
+                            </div>
+                         
+                          </div>
+                      </div>
+
+      
+
+
+
+                    <div id="offline_payment" style="margin: 0em 2em 2em 2em;">
+                    </div>
+                    <div id="show-pay">
+                        
+                    </div>
+              </div>
+          </div>
+       </div>
+          
+
+
+          <footer class="footer">
+            <div class="container">
+              <div class="row">
+                <div class="col-12" style="display:inline-block;margin: -15px 0px -40px -30px;">
+                    <div class="footer-logo" style="float:left;margin-left: 30px;"><a class="footer-logo__link" href="home.html"><img class="img-responsive" src="assets/media/general/logo-light.png" alt="Logo"></a></div>
+                    <div class="" style="float:right;">
+                      <ul class="footer-soc list-unstyled">
+                        <li class="footer-soc__item"><a class="footer-soc__link" href="#" target="_blank"><i class="ic fab fa-twitter"></i></a></li>
+                        <li class="footer-soc__item"><a class="footer-soc__link" href="#" target="_blank"><i class="ic fab fa-facebook"></i></a></li>
+                        <li class="footer-soc__item"><a class="footer-soc__link" href="#" target="_blank"><i class="ic fab fa-linkedin"></i></a></li>
+                        <li class="footer-soc__item"><a class="footer-soc__link" href="#" target="_blank"><i class="ic fab fa-google-plus-g"></i></a></li>
+                        <li class="footer-soc__item"><a class="footer-soc__link" href="#" target="_blank"><i class="ic fab fa-pinterest"></i></a></li>
+                        <li class="footer-soc__item"><a class="footer-soc__link" href="#" target="_blank"><i class="ic fas fa-play"></i></a></li>
+                      </ul>
+                   </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-4 col-sm-5">
+                  <div class="footer-section footer-section_info">
+                    <div class="footer-info">Ceipisicing elit sed do eiusmod tempor laboe dolore magna aliqa Ut enim ad minim veniam quis nostrud exercitation ullam co laboris nis aliquip comsecd sed ipsum.</div>
+                    <div class="footer-contacts">
+                      <div class="footer-contacts__item"><i class="ic icon-location-pin"></i>Fairview Ave, El Monte, CA 91732</div>
+                      <div class="footer-contacts__item"><i class="ic icon-envelope"></i><a href="mailto:support@domain.com">support@domain.com</a></div>
+                      <div class="footer-contacts__item"><i class="ic icon-earphones-alt"></i>Phone:
+                        
+                        <a href="tel:+17553028549">+1 755 302 8549</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-3">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <section class="footer-section footer-section_link">
+                        <h3 class="footer-section__title">About Revus</h3>
+                        <ul class="footer-list list-unstyled">
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">Services</a></li>
+                          <li><a href="#">About us</a></li>
+                          <li><a href="#">Inventory</a></li>
+                          <li><a href="#">Parts Shop</a></li>
+                          <li><a href="#">Contact</a></li>
+                        </ul>
+                      </section>
+                    </div>
+                    <div class="col-lg-6">
+                      <section class="footer-section footer-section_link">
+                        <h3 class="footer-section__title">Customer Links</h3>
+                        <ul class="footer-list list-unstyled">
+                          <li><a href="#">Latest Cars</a></li>
+                          <li><a href="#">Featured Cars</a></li>
+                          <li><a href="#">Sell Your Car</a></li>
+                          <li><a href="#">Buy a Car</a></li>
+                          <li><a href="#">Reviews</a></li>
+                          <li><a href="#">Latest News</a></li>
+                        </ul>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <section class="footer-section footer-section_subscribe">
+                    <h3 class="footer-section__title">Subscribe Newsletter</h3>
+                    <form class="footer-form">
+                      <div class="footer-form__info">Get our weekly nwsletter for latest car news exclusive offers and deals and more.</div>
+                      <div class="form-group">
+                        <input class="footer-form__input form-control" type="email" placeholder="your email">
+                      </div>
+                      <button class="btn btn-sm btn-primary">Subscribe</button>
+                    </form>
+                  </section>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="footer-copyright" style="margin-top:10px;">
+                    Copyrights (c) 2019 Revus - Auto Dealer Template. All rights reserved.
+                    <a class="footer-copyright__link" href="privacy-policy.html">Privacy Policy</a>
+                  </div>
+                </div>
+              </div><span class="footer__btn-up js-scroll-top"><i class="ic fas fa-angle-up"></i><img src="assets/media/general/go_top.png" alt="go top"></span>
+            </div>
+          </footer>
+          <!-- .footer-->
+      </div>
+      </div>
+    <!-- end layout-theme-->
+    
+    
+    <!-- ++++++++++++-->
+    <!-- MAIN SCRIPTS-->
+    <!-- ++++++++++++-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+    <!-- Bootstrap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Select customization & Color scheme-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.5/js/bootstrap-select.min.js"></script>
+    <!-- Pop-up window-->
+    <script src="assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <!-- Headers scripts-->
+    <script src="assets/plugins/headers/slidebar.js"></script>
+    <script src="assets/plugins/headers/header.js"></script>
+    <!-- Mail scripts-->
+    <script src="assets/plugins/jqBootstrapValidation.js"></script>
+    <script src="assets/plugins/contact_me.js"></script>
+    <!-- Video player-->
+    <script src="assets/plugins/flowplayer/flowplayer.min.js"></script>
+    <!-- Filter and sorting images-->
+    <script src="assets/plugins/isotope/isotope.pkgd.min.js"></script>
+    <script src="assets/plugins/isotope/imagesLoaded.js"></script>
+    <!-- Progress numbers-->
+    <script src="assets/plugins/rendro-easy-pie-chart/jquery.easypiechart.min.js"></script>
+    <script src="assets/plugins/rendro-easy-pie-chart/jquery.waypoints.min.js"></script>
+    <!-- Animations-->
+    <script src="assets/plugins/scrollreveal/scrollreveal.min.js"></script>
+    <!-- Scale images-->
+    <script src="assets/plugins/ofi.min.js"></script>
+    <!-- Video player-->
+    <script src="assets/plugins/flowplayer/flowplayer.min.js"></script>
+    <!--Sliders-->
+    <script src="assets/plugins/slick/slick.js"></script>
+    <!-- Date picker -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+   <script src="assets/js/common.js"></script>
+   <script src="assets/js/custom.js"></script>
+    <script src="assets/js/md5.js"></script>
+   <script src="assets/js/confirmation.js"></script>
+   <script src="assets/js/sweetalert2.js"></script>
+   <script src="assets/js/common1.js"></script>
+
+   <!-- <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+   <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
+
+  </body>
+</html>

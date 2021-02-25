@@ -1,0 +1,283 @@
+  var data = 
+    {
+        "email_id": email,
+        "password": password1,
+        "push_token": webpush_token,
+        "login_tag": "2"
+    };
+    var keyobj = {
+        'url':hostname+'/login',
+        'type': 'POST',
+        'crossDomain': true,
+        'ajaxData': data,
+        'dataType': 'json',
+        'callback': function (success) 
+        {
+            var status = success.status;
+            var user_data=[];
+            if(status == "success")
+            {
+
+
+            }   
+            else
+            {
+                swal("Log In Failed", success.message, "error");
+            }  
+        }
+    }
+    ajaxCallFunction(keyobj);
+
+
+  ////  common.js  example api url /////
+
+    
+  var keyobj1 = 
+    {
+        'url':'config/config.json',
+        'type': 'GET',
+        'crossDomain': true,
+        'ajaxData': '',
+        'dataType': 'json',
+        'callback': function (success) 
+            {
+                
+                hostname = success.apiurl;               
+                localStorage.setItem("url", hostname);
+            }
+    }
+    ajaxCallFunction(keyobj1);
+
+
+<i style="float:right" class="fa fa-chevron-down"></i>
+                            <i  style="float:right" class="fa fa-chevron-up"></i>
+
+
+
+
+                            vvehicle details card views
+                                         <div id="accordion" role="tablist" aria-multiselectable="true">
+                            <!-- Additional benifits -->
+                      <div class="card" style="margin-top:-45px">
+                        <div class="card-body" style="padding-top: 20px;">
+                          <h2 class="b-goods-f__title panel-title">
+                              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  Your Rental Includes
+                              </a>
+                          </h2>
+
+                          <div class="row m-none" style="margin: -20px 0px 10px 0px;"></div>
+                            <div id="collapseOne" class="panel-collapse collapse in row" role="tabpanel" aria-labelledby="headingOne">
+                              <div class="panel-body" style="width:100% !important; margin-left: 15px;"> 
+                                <h5>Additional Information</h5>
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <div>
+                                      <p>&#10004; &nbsp; All taxes and Fees<br>
+                                        &#10004; &nbsp; Hire rates And VAT<br>
+                                        &#10004; &nbsp; 24 Hours Roadside Assistance<br>
+                                        &#10004; &nbsp; Theft Insurance<br>
+                                        &#10004; &nbsp; Road tax</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div>
+                                        <p>&#10004; &nbsp; Fare fuel Policy<br>
+                                          &#10004; &nbsp; Great deal<br>
+                                          </p>
+                                    </div>
+                                    <!-- <dl class="b-goods-f__descr row">
+                                      <dt class="b-goods-f__descr-title col-lg-5 col-md-12">No. Of Seats</dt>
+                                      <dd class="b-goods-f__descr-info col-lg-7 col-md-12">5</dd>
+                                    </dl> -->
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+
+                      <br>
+                      <div class="col-md-12">
+                          <div class="row"><button type="button" class="btn btn-success">Important Information</button></div>
+                      </div>
+                      <br>
+                          <!-- Service Provider details -->
+                    
+                      <div class="card panel">
+                        <div class="card-body panel-heading" role="tab" id="headingTwo" style="padding-top: 20px;">
+                          <h2 class="b-goods-f__title panel-title">
+                              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                  Provider Location
+                              </a>
+                          </h2>
+                          <div class="row m-none" style="margin: -30px 0px 10px 0px;">
+                          </div>
+                          <div id="collapseTwo" class="panel-collapse collapse in row" role="tabpanel" aria-labelledby="headingTwo">
+                            <div  class="panel-body" style="margin-left: 15px;">
+                                <h4>Mahindra rental Ltd</h4>
+                                <p>pallikaranai Main Road,velachery</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    
+                      <br>
+                        <!-- OPTIONAL EXTRAS    -->
+                      <div class="card panel">
+                        <div class="card-body panel-heading" role="tab" id="headingThree" style="padding-top: 20px;">
+                          <h2 class="b-goods-f__title panel-title">
+                              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                  OPTIONAL EXTRAS
+                              </a>
+                           </h2>
+                          <div class="row m-none" style="margin: -30px 0px 10px 0px;"></div>
+                          <div id="collapseThree" class="panel-collapse collapse in row" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="col-md-12 panel-body">
+                              <h5>Basic benifits</h5>
+                                <li style="list-style:none">
+                                    <input id="checkid2" type="checkbox" value="test" />
+                                    <label for="checkid2">Baby seats</label>
+                                </li>
+                            </div>
+                            <!-- <div class="col-md-6">
+                              <h5>Additional benifits</h5>
+                              <dl class="b-goods-f__descr row">
+                                <dt class="b-goods-f__descr-title col-lg-5 col-md-12">Condition</dt>
+                                <dd class="b-goods-f__descr-info col-lg-7 col-md-12">New</dd>
+        
+                              </dl>
+                            </div> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                        <br>
+                      <div class="row">
+                        <div class="col-md-9"></div>
+                        <div class="col-md-3">
+                          <div class="" style="float:right;"><a class="section-carousel__btn btn btn-primary" href="confirmation.html"><i class="ic icon-search"></i>Book Now</a></div>
+                        </div>
+                      </div>
+
+
+
+
+                              ul list  
+                      
+                      <ul class="list list-mark-2">
+                            <li>Enim ipsum ad minim veniams quis nostrud citation ullam laboris nisi</li>
+                            <li>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore</li>
+                            <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco</li>
+                            <li>Laboris nisi ut aliquip ex ea comodo consequat duis aute irure dolor in</li>
+                            <li>Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla</li>
+                          </ul>
+
+                          <div> 
+                              <form action="#">
+                              <div class="card">
+                                <div class="card-body" style="padding:20px;">
+                                  <div class="row">
+                                    <strong><input type="radio" id="test1" name="radio-group" checked>
+                                    <label for="test1">With Basic Protection</label></strong>
+                                  </div>
+                                  <hr>
+                                  <ul class="list list-mark-2" style="margin-bottom:0px !important;">
+                                    <div style="display: inline-flex; margin-left: 8px;">
+                                      <li  style="margin-right:15px">Collision Damage Waiver</li><br>
+                                      <li  style="margin-right:15px">Theft Waiver</li><br>
+                                      <li  style="margin-right:15px"> Third Party Liability Protection</li>
+                                    </div>
+                                    </ul>
+                                </div>
+                              </div>
+                                <br>
+                                <div class="card">
+                                <div class="card-body" style="padding:20px;">
+                                  <div class="row">
+                                      <strong>
+                                        <input type="radio" id="test2" name="radio-group">
+                                        <label for="test2">WIth Super Protection</label>
+                                      </strong>
+                                  </div>
+                                  <hr>
+                                  <ul class="list list-mark-2" style="margin-bottom:0px !important;">
+                                    <div style="display: inline-flex; margin-left: 8px;">
+                                      <li  style="margin-right:15px">Collision Damage Waiver</li><br>
+                                      <li  style="margin-right:15px">Theft Waiver    </li><br>
+                                      <li  style="margin-right:15px"> Third Party Liability Protection</li>
+                                    </div>
+                                    <div style="display: inline-flex; margin-left: 8px;">
+                                        <li  style="margin-right:15px">Windows, Mirrors, Chassis and Tyres Coverage</li><br>
+                                        <li  style="margin-right:15px">Personal Accident Insurance</li><br>
+                                      </div>
+                                      <div style="display: inline-flex; margin-left: 8px;">
+                                          <li  style="margin-right:15px">Towing & Roadside Assistance Costs</li>
+                                          <li  style="margin-right:15px">Loss of Leased Items & Pick-up Delay Insurancer</li><br>
+                                        </div>
+                                        <div style="display: inline-flex; margin-left: 8px;">
+                                            <li  style="margin-right:15px">Insurance Clean Up Fee and Misfuelling Charge/li>
+                                        </div>
+                                    </ul>
+                                </div>
+                              </div>
+                            </form>
+                            
+                  <div class="b-goods-f col-12 b-goods-f_row">
+                      <div class="b-goods-f__media"><img class="b-goods-f__img img-scale" src="assets/media/content/b-goods/300x220/3.jpg" alt="foto"/><span class="b-goods-f__media-inner"><span class="b-goods-f__favorite"><i class="ic far fa-star"></i></span></span>
+                        <!-- Car svg icon -->
+                      <div class="col-sm-12" style="margin: 5px 0px 0px 18px;">
+                        <ul class="list-unstyled list-inline details_icon">
+                              <div class="row">
+                                <li style="margin-right:13px">
+                                    <img src="./assets/media/content/car_details_icon/seat.svg" style="width:20px; display:inline-block" data-toggle="tooltip" title="" data-original-title="Adult passengers">
+                                    &nbsp;
+                                    <span>4 Seats</span>
+                                </li>
+                                <li style="margin-right:13px">
+                                    <img src="./assets/media/content/car_details_icon/door.svg" style="width:20px; display:inline-block" data-toggle="tooltip" title="" data-original-title="Small suitcase/s 50 liters">
+                                    &nbsp;
+                                    <span>5 Doors</span>
+                                </li>
+                                <li style="margin-right:13px">
+                                    <img src="./assets/media/content/car_details_icon/freezer.svg" style="width:20px; display:inline-block" data-toggle="tooltip" title="" data-original-title="Doors">
+                                    &nbsp;
+                                    <span>AirConditioning</span>
+                                </li>
+                                <li style="margin-right:13px">
+                                    <img src="./assets/media/content/car_details_icon/gear.svg" style="width:20px; display:inline-block" data-toggle="tooltip" title="" data-original-title="Doors">
+                                      &nbsp;
+                                    <span>Automatic gearbox</span>
+                                </li>
+                              </div>
+                              
+                        </ul>
+                        </div>
+                      </div>
+                      <div class="b-goods-f__main">
+                        <div class="b-goods-f__descrip">
+                          <div class="b-goods-f__title">Jaguar GX 480i
+                              <div class="row">
+                                  <li style="margin-left: 8px;list-style: none;display: flex;"">
+                                    <fieldset class="rating" id='view_rating5' style="font-size: 15px;">
+                                    </fieldset>
+                                  </li>
+                                </div>
+                          </div>
+                          <!-- <div class="b-goods-f__info">Magna aliqua enim aduas veniam quis nostrud exercitation ullam laboris aliquip.</div> -->
+                          <ul class="b-goods-f__list list-unstyled">
+                            <li class="b-goods-f__list-item"><span class="b-goods-f__list-title">Mileage :</span><span class="b-goods-f__list-info">35,000km</span></li>
+                            <li class="b-goods-f__list-item"><span class="b-goods-f__list-title">Model :</span><span class="b-goods-f__list-info">2019</span></li>
+                            <!-- <li class="b-goods-f__list-item"><span class="b-goods-f__list-title">Transmission :</span><span class="b-goods-f__list-info">Manual</span></li> -->
+                            <!-- <li class="b-goods-f__list-item b-goods-f__list-item_row"><span class="b-goods-f__list-title">Body Type :</span><span class="b-goods-f__list-info">sedan</span></li> -->
+                            <li class="b-goods-f__list-item"><span class="b-goods-f__list-title">Fuel Type :</span><span class="b-goods-f__list-info">Petrol</span></li>
+                            <!-- <li class="b-goods-f__list-item b-goods-f__list-item_row"><span class="b-goods-f__list-title">Engine Power:</span><span class="b-goods-f__list-info">160 hp</span></li> -->
+                            <li class="b-goods-f__list-item b-goods-f__list-item_row"><span class="b-goods-f__list-title">Body Color :</span><span class="b-goods-f__list-info">White</span></li>
+                            <!-- <li class="b-goods-f__list-item b-goods-f__list-item_row"><span class="b-goods-f__list-title">Drive Type :</span><span class="b-goods-f__list-info">4WD</span></li> -->
+                          </ul>
+                        </div>
+                        <div class="b-goods-f__sidebar"><span class="b-goods-f__price-group"><span class="b-goods-f__price"><span class="b-goods-f__price_col">msrp:&nbsp;</span><span class="b-goods-f__price-numb">$55,600</span></span></span>
+                          <div class="b-goods-f__imprest">Est. Down Payment: $450/m</div><span class="b-goods-f__compare">Book Now<i class="ic fas fa-columns"></i></span>
+                        </div>
+                      </div>
+                    </div>

@@ -1,0 +1,57 @@
+[{
+      "thumb": "assets/media/content/b-goods/300x220/1.jpg",
+      "name": "Toyoto qualise-900",
+      "rate": 0,
+      "mileage":"18,000",
+      "model":"1900",
+      "fueltype":"petrol",
+      "price": "Rs.1899",
+      "seats":"3",
+      "doors":"5",
+      "aircondition":"No Air conditioning",
+      "transmissiontype":"Manual gearbox",
+      "id": 1
+    },
+    {
+      "thumb": "assets/media/content/b-goods/300x220/2.jpg",
+      "name": "Mahendira Bolero",
+      "rate": 0,
+      "mileage":"19,000",
+      "model":"2010",
+      "fueltype":"petrol",
+      "price": "Rs.2299",
+      "seats":"3",
+      "doors":"5",
+      "aircondition":"No Air conditioning",
+      "transmissiontype":"Automatic gearbox",
+      "id": 2
+    },
+    {
+      "thumb": "assets/media/content/b-goods/300x220/3.jpg",
+      "name": "Ford Eco-sport",
+      "rate": 0,
+      "mileage":"22,000",
+      "model":"2019",
+      "fueltype":"Diesel",
+      "price": "Rs.1999",
+      "seats":"4",
+      "doors":"5",
+      "aircondition":"Air conditioning",
+      "transmissiontype":"Manual gearbox",
+      "id": 3
+    },
+    {
+      "thumb":"assets/media/content/b-goods/300x220/4.jpg",
+      "name": "Localize Autos",
+      "rate": 0,
+      "mileage":"18,000",
+      "model":"2019",
+      "fueltype":"Diesel",
+      "price": "Rs.1999",
+      "seats":"4",
+      "doors":"5",
+      "aircondition":"No Air conditioning",
+      "transmissiontype":"Automatic gearbox",
+      "id": 4
+    }
+    ]

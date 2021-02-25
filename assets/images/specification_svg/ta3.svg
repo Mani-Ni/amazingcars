@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="5078 3577 59.995 75">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #009ae9;
+      }
+    </style>
+  </defs>
+  <g id="taxi_4_" data-name="taxi (4)" transform="translate(5048.691 3577)">
+    <g id="Group_409" data-name="Group 409" transform="translate(29.309)">
+      <g id="Group_408" data-name="Group 408" transform="translate(0)">
+        <path id="Path_385" data-name="Path 385" class="cls-1" d="M59.414,0H59.2a29.888,29.888,0,0,0-22.34,49.746L59.307,75,81.754,49.746A29.888,29.888,0,0,0,59.414,0ZM79.96,48.152,59.306,71.388,38.652,48.152A27.489,27.489,0,0,1,59.2,2.4h.217A27.489,27.489,0,0,1,79.96,48.152Z" transform="translate(-29.309)"/>
+        <path id="Path_386" data-name="Path 386" class="cls-1" d="M98.232,43.725H95.706l-.845-7.6a3.6,3.6,0,0,0-3.577-3.2H88.633v-4.8h-16.8v4.8H69.183a3.6,3.6,0,0,0-3.577,3.2l-.845,7.6H62.236a4.8,4.8,0,0,0-4.8,4.8v12a2.4,2.4,0,0,0,2.4,2.4h1.2v2.4a3.6,3.6,0,0,0,3.6,3.6h2.4a3.6,3.6,0,0,0,3.6-3.6v-2.4h19.2v2.4a3.6,3.6,0,0,0,3.6,3.6h2.4a3.6,3.6,0,0,0,3.6-3.6v-2.4h1.2a2.4,2.4,0,0,0,2.4-2.4v-12A4.807,4.807,0,0,0,98.232,43.725Zm-24-13.2h12v2.4h-12v-2.4ZM67.99,36.393a1.2,1.2,0,0,1,1.193-1.068h22.1a1.2,1.2,0,0,1,1.193,1.068l.815,7.331H67.175Zm-.955,30.13h-2.4a1.2,1.2,0,0,1-1.2-1.2v-2.4h4.8v2.4h0A1.2,1.2,0,0,1,67.034,66.523Zm28.8,0h-2.4a1.2,1.2,0,0,1-1.2-1.2v-2.4h4.8v2.4h0A1.2,1.2,0,0,1,95.832,66.523Zm4.8-6h-40.8v-2.4h40.8Zm0-4.8h-40.8v-7.2a2.4,2.4,0,0,1,2.4-2.4h36a2.4,2.4,0,0,1,2.4,2.4Z" transform="translate(-50.236 -20.926)"/>
+        <path id="Path_387" data-name="Path 387" class="cls-1" d="M75.1,103.124a3.6,3.6,0,1,0,3.6,3.6A3.6,3.6,0,0,0,75.1,103.124Zm0,4.8a1.2,1.2,0,1,1,1.2-1.2A1.2,1.2,0,0,1,75.1,107.924Z" transform="translate(-60.697 -76.726)"/>
+        <path id="Path_388" data-name="Path 388" class="cls-1" d="M196.971,103.124a3.6,3.6,0,1,0,3.6,3.6A3.6,3.6,0,0,0,196.971,103.124Zm0,4.8a1.2,1.2,0,1,1,1.2-1.2A1.2,1.2,0,0,1,196.971,107.924Z" transform="translate(-151.375 -76.726)"/>
+        <rect id="Rectangle_123" data-name="Rectangle 123" class="cls-1" width="16.799" height="2.4" transform="translate(21.598 29.998)"/>
+        <rect id="Rectangle_124" data-name="Rectangle 124" class="cls-1" width="2.4" height="2.4" transform="translate(28.798 61.195)"/>
+        <rect id="Rectangle_125" data-name="Rectangle 125" class="cls-1" width="2.4" height="2.4" transform="translate(28.798 56.395)"/>
+        <rect id="Rectangle_126" data-name="Rectangle 126" class="cls-1" width="2.4" height="2.4" transform="translate(28.798 51.596)"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2406 4187.75 86 46.583">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #009ae9;
+      }
+    </style>
+  </defs>
+  <g id="switch-off" transform="translate(2406 4070.417)">
+    <g id="Group_369" data-name="Group 369" transform="translate(0 117.333)">
+      <g id="Group_368" data-name="Group 368" transform="translate(0 0)">
+        <path id="Path_365" data-name="Path 365" class="cls-1" d="M23.292,117.333a23.292,23.292,0,1,0,23.292,23.292A23.319,23.319,0,0,0,23.292,117.333Zm0,43A19.708,19.708,0,1,1,43,140.625,19.731,19.731,0,0,1,23.292,160.333Z" transform="translate(0 -117.333)"/>
+      </g>
+    </g>
+    <g id="Group_371" data-name="Group 371" transform="translate(10.75 128.083)">
+      <g id="Group_370" data-name="Group 370" transform="translate(0 0)">
+        <path id="Path_366" data-name="Path 366" class="cls-1" d="M76.542,181.333a12.542,12.542,0,1,0,12.542,12.542A12.555,12.555,0,0,0,76.542,181.333Zm0,21.5a8.958,8.958,0,1,1,8.958-8.958A8.968,8.968,0,0,1,76.542,202.833Z" transform="translate(-64 -181.333)"/>
+      </g>
+    </g>
+    <g id="Group_373" data-name="Group 373" transform="translate(41.208 128.083)">
+      <g id="Group_372" data-name="Group 372" transform="translate(0 0)">
+        <path id="Path_367" data-name="Path 367" class="cls-1" d="M277.583,181.333H247.125a1.792,1.792,0,0,0,0,3.583h30.458a8.958,8.958,0,1,1,0,17.917H247.125a1.792,1.792,0,1,0,0,3.583h30.458a12.542,12.542,0,0,0,0-25.083Z" transform="translate(-245.333 -181.333)"/>
+      </g>
+    </g>
+  </g>
+</svg>

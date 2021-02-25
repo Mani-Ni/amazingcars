@@ -1,0 +1,706 @@
+.form_control_1 {
+  display: block;
+  width: 100%;
+  /* padding: $input-padding-y $input-padding-x;
+  line-height: $input-line-height; */
+  height: 35px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.07);
+  padding: 0.375rem 0.75rem;
+  border-radius: 2px;
+  border: 1px solid #dddddd;
+  color: black;
+  font-family: Montserrat;
+  font-size: 14px;
+  text-transform:none;
+}
+.form_control_12 {
+  display: block;
+  width: 100%;
+  /* padding: $input-padding-y $input-padding-x;
+  line-height: $input-line-height; */
+  height: 35px;
+  padding: 0.375rem 0.75rem;
+  color: black;
+  font-family: Montserrat;
+  font-size: 14px;
+  text-transform:none;
+}
+.form_control1 {
+  display: block;
+  width: 30%;
+  /* padding: $input-padding-y $input-padding-x;
+  line-height: $input-line-height; */
+  height: 35px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.07);
+  padding: 0.375rem 0.75rem;
+  border-radius: 2px;
+  border: 1px solid #dddddd;
+  color: black;
+  font-family: Montserrat;
+  font-size: 14px;
+  text-transform:none;
+}
+
+
+/* ================= user profile menu --> each header============== */
+
+.profile-dropdown {
+  margin: auto;
+  font-weight: bold;
+  /* font-size: 1.3rem; */
+  /* background-color: #d3d3d3; */
+  border-radius: 3px;
+  padding:0px;
+  top: -10px;
+  -webkit-user-select: none; 
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ ul {
+  display: block;
+  animation: pulse 0.5s;
+}
+/* input[type="checkbox"]:checked ~ img {
+  background: red;
+}
+    input[type="checkbox"]:checked ~ label {
+    background: red;
+    } */
+input[type="checkbox"]:checked ~ label i {
+  color: #f2f2f2;
+}
+input[type="checkbox"]:checked ~ label:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: calc(50% - 10px);
+  display: block;
+  border-style: solid;
+  border-width: 7px 10px 0 10px;
+  border-color: orange transparent transparent transparent;
+  width: 0;
+  height: 0;
+}
+
+ul li label img {
+  display: inline-block;
+  background: #d9d9d9;
+  height: 2.5rem;
+  vertical-align: middle;
+  margin-right: 1rem;
+  margin: 0.5rem 0.75rem 0.5rem 0.5rem;
+  border-radius: 50%;
+}
+
+ul li span {
+  display: inline-block;
+  /* vertical-align: sub; */
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+ul li ul {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  border-radius: 3px;
+}
+
+ul li ul li a {
+  display: block;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  color: #737373;
+  font-size: 1rem;
+  width: 198px;
+}
+
+ul li ul li i {
+  font-size: 1.3rem;
+  vertical-align: middle;
+  margin: 0 0.75rem 0 -0.25rem;
+}
+
+ul li ul li:hover {
+  background: #e5e5e5;
+}
+
+ul li ul:first-child a:hover {
+  border-radius: 3px 3px 0 0;
+}
+
+ul li ul:last-child a:hover {
+  border-radius: 0 0 3px 3px;
+}
+
+ ul li label {
+  position: relative;
+  height: 3.5rem;
+  display: block;
+  text-decoration: none;
+  background: transparent;
+  color: #333;
+  box-sizing: border-box;
+  padding: 0.9rem;
+  float: right;
+  border-radius: 0 3px 3px 0;
+  margin-top: 5px;
+}
+
+label i {
+  color: #b2b2b2;
+  font-size: 1.75rem;
+}
+
+div:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+        /*====================profile page li items of side menu ======================*/
+.prof_sidemenu_li{
+  margin: 6px 50px -7px 0px;
+padding: 0px 0px 0px 0px;
+cursor: pointer;
+font-size: 15px;
+margin-left: 50px;
+}
+
+        /*============= profile page sidenav right arrow icons ======================= */
+.prof_icon{
+  float: right;
+    margin-top: 7px;
+}
+              /*================ vehicle details page svg icons ================*/
+.veh_det_svg_icon{
+  display: inline-flex;
+  /* padding: 0px; */
+  /* padding: 0px 0px 0px 0px; */
+  margin-top: 25px;
+}
+
+.orange{
+  float:right;background-color: #f78b22;padding-right: 3%;padding-left: 3%;color: #ffffff;
+  }
+.orange1{
+  float:right;background-color: #f78b22;color: #ffffff;
+  }
+  
+.green{
+    float:right;background-color: #1da303;padding-right: 3%;padding-left: 3%;color: #ffffff;
+    }
+.green1{
+    float:right;background-color: #1da303;color: #ffffff;
+    }
+
+ .red{
+      float:right;background-color: #f73210;padding-right: 3%;padding-left: 3%;color: #ffffff;
+      }
+ .red1{
+    float:right;background-color: #f73210;color: #ffffff;
+    }
+
+
+/* ============== Cancel booking popup textbox css     ======= */
+
+
+      #reason_text > form > input{
+        font-family: 'Ubuntu', sans-serif;
+        display: block;
+        margin: 10px;
+        padding: 5px;
+        border: none;
+        font-size: 16px;
+        }
+      #reason_text > form > span{
+        font-family: 'Ubuntu', sans-serif;
+        display: block;
+        margin: 10px;
+        padding: 5px;
+        border: none;
+        font-size: 16px;
+        }
+      #reason_text > form > label
+        {
+        font-family: 'Ubuntu', sans-serif;
+        display: block;
+        margin: 10px;
+        padding: 5px;
+        border: none;
+        font-size: 16px;
+        }
+      #reason_text > form > textarea {
+        font-family: 'Ubuntu', sans-serif;
+        display: block;
+        margin: 10px;
+        padding: 5px;
+        border: none;
+        font-size: 16px;
+      }
+      
+      #reason_text > form > textarea:focus,
+      input:focus {
+        outline: 0;
+      }
+      /* Question */
+      
+      #reason_text > form > input.question,
+      textarea.question {
+        /* font-size: 48px; */
+        font-weight: 300;
+        border-radius: 2px;
+        margin: 0;
+        border: none;
+        width: 80%;
+        background: rgba(0, 0, 0, 0);
+        transition: padding-top 0.2s ease, margin-top 0.2s ease;
+        overflow-x: hidden; /* Hack to make "rows" attribute apply in Firefox. */
+      }
+      /* Underline and Placeholder */
+      
+      #reason_text > form > input.question + label,
+      textarea.question + label {
+        display: block;
+        position: relative;
+        white-space: nowrap;
+        padding: 0;
+        margin: 0;
+        width: 30%;
+        border-top: 1px solid red;
+        -webkit-transition: width 0.4s ease;
+        transition: width 0.4s ease;
+        height: 0px;
+      }
+      
+      #reason_text > form > input.question:focus + label,
+      textarea.question:focus + label {
+        width: 80%;
+      }
+      
+      #reason_text > form > input.question:focus,
+      input.question:valid {
+        padding-top: 35px;
+      }
+      
+      #reason_text > form > textarea.question:valid,
+      textarea.question:focus {
+        margin-top: 35px;
+      }
+      
+      #reason_text > form > input.question:focus + label > span,
+      input.question:valid + label > span {
+        top: -100px;
+        font-size: 22px;
+        color: #333;
+      }
+      
+      #reason_text > form > textarea.question:focus + label > span,
+      textarea.question:valid + label > span {
+        /* top: -150px; */
+        font-size: 22px;
+        color: #333;
+      }
+      
+      #reason_text > form > input.question:valid + label,
+      textarea.question:valid + label {
+        border-color: green;
+      }
+      
+      #reason_text > form > input.question:invalid,
+      textarea.question:invalid {
+        box-shadow: none;
+      }
+      
+      #reason_text > form > input.question + label > span,
+      textarea.question + label > span {
+        font-weight: 300;
+        margin: 0;
+        position: absolute;
+        color: #8F8F8F;
+        font-size: 48px;
+        top: -66px;
+        left: 0px;
+        z-index: -1;
+        -webkit-transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+        transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+      }
+      
+      #reason_text > form > input[type="submit"] {
+        -webkit-transition: opacity 0.2s ease, background 0.2s ease;
+        transition: opacity 0.2s ease, background 0.2s ease;
+        display: block;
+        opacity: 0;
+        margin: 10px 0 0 0;
+        padding: 10px;
+        cursor: pointer;
+      }
+      
+      #reason_text > form > input[type="submit"]:hover {
+        background: #EEE;
+      }
+      
+      #reason_text > form >input[type="submit"]:active {
+        background: #999;
+      }
+      
+      /* input.question:valid ~ input[type="submit"], */
+      #reason_text > form >textarea.question:valid ~ input[type="submit"] {
+        -webkit-animation: appear 1s forwards;
+        animation: appear 1s forwards;
+      }
+      
+      /* input.question:invalid ~ input[type="submit"],  */
+      #reason_text > form >textarea.question:invalid ~ input[type="submit"] {
+        display: none;
+      }
+      
+      @-webkit-keyframes appear {
+        100% {
+          opacity: 1;
+        }
+      }
+      
+      @keyframes appear {
+        100% {
+          opacity: 1;
+        }
+      }
+
+      .reason_submit{
+        margin-top: 20px;
+        padding: 5px;
+        line-break: 1px;
+        background-color: #ff000f;
+        color:#ffffff;
+        font-weight: 600;
+        width: 90px;
+      }
+      
+
+/* CANCELLED BOOKING BUTTON ---> POPUP CSS */
+
+
+        /* Confirmation popup box */
+  /* Confirmation popup box */
+  .modal1 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 130px; /* Location of the box */   
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0);
+     /* Fallback color */
+    background-color: rgba(0,0,0,0.4);
+     /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal1-content {
+    background-color: #fefefe;
+    margin: auto;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close1 {
+    color: #aaaaaa;
+    float: right;
+    padding: 1px;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -13px;
+}
+
+.close1:hover,
+.close1:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Book Now Button */
+/* .feedback {
+  background-color : #31B0D5;
+  color: white;
+  padding: 10px 20px;
+  text-align:center;
+  border-radius: 4px;
+  border-color: #46b8da;
+}
+
+#mybutton {
+  position: fixed !important;
+  bottom: -4px;
+  right: 50%;
+} */
+
+.scroll-top {
+  width: 200;
+  height: 75px;
+  position: fixed;
+  float: right;
+  bottom: 25px;
+  left: 85%;
+  display: none;
+}
+.scroll-top i {
+  display: inline-block;
+  color: #FFFFFF;
+}
+
+      /*============= VEHICLE DETAILS  CSS ===========  */
+
+#pic_drop_vehicle {
+  padding: 0.5ex;
+  /* width: px; */
+  /* background-color: #333; */
+  color: #fff;
+  /* font-size: 2em; */
+  border-radius: 0.5ex;
+}
+    /* // Prettify for CodePen */
+
+.expand-button {
+  cursor: pointer;
+  display: block;
+  width: 20%;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  border: 4px solid darken(darkcyan, 10%);
+  border-radius: 3px;
+  background-color: #111213;
+  color: white;
+  font-size: 1rem;
+  padding: 0.3rem;
+  /* padding: 0.5rem; */
+/*   
+  &:hover, &:active, &:focus {
+    background-color: darken(darkcyan, 5%);
+  } */
+}
+.expand-button1 {
+  cursor: pointer;
+  /* display: block; */
+  width: 12%;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  border: 4px solid darken(darkcyan, 10%);
+  border-radius: 3px;
+  background-color: #ff0000;
+  color: white;
+  font-size: 1rem;
+  padding: 0.3rem;
+  float: right;
+  font-weight:800;
+}
+.expand-button2 {
+  cursor: pointer;
+  /* display: block; */
+  width: 20%;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  border: 4px solid darken(darkcyan, 10%);
+  border-radius: 3px;
+  background-color: #243241;
+  color: white;
+  font-size: 1rem;
+  padding: 0.3rem;
+  float: right;
+}
+  
+.expand-button:hover, .expand-button:active, .expand-button:focus {
+    background-color: darken(darkcyan, 5%);
+  }
+
+/* // Okay legit CSS now */
+.special-text {
+  position: relative;
+  max-height: 150px;
+  overflow: hidden;
+  transition: max-height 1s ease;
+/*   
+  &.-expanded {
+    max-height: 100vh;
+  } */
+}
+.special-text1 {
+  position: relative;
+  max-height: 200px;
+  overflow: hidden;
+  transition: max-height 1s ease;
+/*   
+  &.-expanded {
+    max-height: 100vh;
+  } */
+}
+  
+  .special-text.-expanded {
+    max-height: 100vh;
+  }
+  .special-text1.-expanded {
+    max-height: 100vh;
+  }
+
+.special-text:not(.-expanded)::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)); */
+}
+.special-text1:not(.-expanded)::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)); */
+}
+
+/* POPUP LOGIN SHOWS */
+.close2 {
+  /* position: absolute; */
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.5;
+  font-family:inherit;
+  font-size:20px;
+  padding: 0px 0px 0px 20px;
+  margin-top: -14px;
+}
+.close2:hover {
+  opacity: 1;
+}
+.close2:before, .close:after {
+  /* position: absolute; */
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #333;
+}
+.close2:before {
+  transform: rotate(45deg);
+}
+.close2:after {
+  transform: rotate(-45deg);
+}
+
+
+
+/* profile nav  */
+.nav1:hover{
+  background-color: whitesmoke !important;
+}
+
+   /* INVENTORY PAGE  */
+.b-goods-f_row_custom{
+  position: relative;
+  margin-bottom: 25px; 
+  padding: 15px;
+  /* background-color: #ffffff; */
+  border: 1px solid #bababa;
+  box-shadow: 0 4px 8px 0 rgba(138,107,118,.08)
+}
+.b-goods-f_row_custom:hover{
+  background-color:#ffffff;
+  border :1px solid #85CDE8;
+}
+.viewdeal_btn{  
+    border-radius: 25px;
+    background-color: #ff0000;
+    width: 110px
+    ;background-color: #ff0000;
+    color: white;
+    font-weight: 600;
+  }
+  .viewdeal_price{
+      font-size:15px;
+      font-weight: bold;
+      color: black;
+  }
+       /* inventory list col-md-9 right side */
+
+.b-filter-goods_custom{
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+}
+
+
+/* custom navbar items in all header portion */
+.custom_nav > ul > li > a{
+  color: #222222;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.3s ease-out;
+  /* -webkit-transition: all 0.3s ease-out; */
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.navlink{
+  color: #222222;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.3s ease-out;
+  /* -webkit-transition: all 0.3s ease-out; */
+  padding-left: 12px;
+  padding-right: 12px;
+} 
+
+.custom_nav > ul > li > a:hover{
+  color:#c6372a;
+}
+
+.cus_loginout{
+  font-weight: unset !important;
+}
+.cus_loginout:hover{
+  color:#c6372a;
+}
+#user_name:hover{
+  color:#c6372a;
+}
+
+#profile_custom{
+  font-size: 14px;
+  color: #000000;
+  font-weight: 600;
+  margin: 0em 0em 0em 0.7em;
+  font-family: Montserrat;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+

@@ -1,0 +1,65 @@
+<html lang="en">
+
+
+<head>
+    <link href='//cdnjs.cloudflare.com/ajax/libs/selectize.js/0.8.5/css/selectize.default.css' rel='stylesheet' type='text/css'>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/selectize.js/0.8.5/js/standalone/selectize.min.js"></script>
+<script type="text/javascript">
+        $(function() {
+                 $('#select').selectize({});
+        });
+</script>
+</head>
+<body>
+
+  <div class="row card profile_tabs_card profile_tabs_card_hover" style="flex-direction:inherit ;margin: 11px 0px 0px 0px;">
+    <div class="card-body" style="padding: 20px;">
+        <div class="row">
+            <div class="col-md-4"> <img style="width: 16em;height: 11em;" src="'+s3Url+''+booking_details[i].car_image[0]+'"> </div>
+            <div class="col-md-8">
+                <div class="row" style="border-bottom:1px solid #bababa;margin-bottom: 7px;font-size: 12px;">
+                    <div class="col-md-6">
+                        <div>
+                            <h4>'+booking_details[i].car_brand+'</h4></div>
+                        <div class="row" style="margin-top:2px;">
+                            <h5 class="col-md-6">'+booking_details[i].car_model+'</h5>
+                            <div class="col-md-6">Type : '+trip_type+'</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div> <span class="'+status_class+'" style="float:right;margin-bottom: 5px;">'+status+'</span> </div>
+                        <div style="font-size: 20px;">
+                            <button class="" style="float: right;font-weight: bold;">Rs.'+booking_details[i].price+'.00</button>
+                        </div>
+                    </div>
+                <div class="row" style="font-size: 13px;">
+                    <div class="col-md-5">
+                        <div id="pro_company"> <strong>Pickup Location:</strong></div>
+                        <div id="pro_address">'+booking_details[i].pickup_location+'</div>
+                        <div id="pickup_date">'+booking_details[i].pickup_date+'</div>
+                    </div>
+                    <div class="col-md-5">
+                        <div id="pro_company"> <strong>Timing</strong> </div>
+                        <div id="pickup_time">Pickup Time :'+booking_details[i].pickup_time+'</div>
+                        <div id="drop_time"> Drop Time :'+booking_details[i].drop_time+'</div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div>
+                        <br>
+                        <br>
+                        <br> </div>
+                    <button onclick="viewBookings(\''+booking_details[i]._id+'\')" class="btn btn-primary btn-sm" style=" float:right;padding: 5px;font-size: 13px;font-weight: 500;">View Details</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+              
+</body>
+
+
+</html>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="4742 3881 58 60">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #009ae9;
+      }
+    </style>
+  </defs>
+  <g id="newspaper" transform="translate(4741 3881)">
+    <path id="Path_396" data-name="Path 396" class="cls-1" d="M31,16H17V30H31ZM29,28H19V18H29Z"/>
+    <path id="Path_397" data-name="Path 397" class="cls-1" d="M52,16H36a1,1,0,0,0,0,2H52a1,1,0,0,0,0-2Z"/>
+    <path id="Path_398" data-name="Path 398" class="cls-1" d="M52,22H36a1,1,0,0,0,0,2H52a1,1,0,0,0,0-2Z"/>
+    <path id="Path_399" data-name="Path 399" class="cls-1" d="M52,28H36a1,1,0,0,0,0,2H52a1,1,0,0,0,0-2Z"/>
+    <path id="Path_400" data-name="Path 400" class="cls-1" d="M52,34H19a1,1,0,0,0,0,2H52a1,1,0,0,0,0-2Z"/>
+    <path id="Path_401" data-name="Path 401" class="cls-1" d="M34,40H19a1,1,0,0,0,0,2H34a1,1,0,0,0,0-2Z"/>
+    <path id="Path_402" data-name="Path 402" class="cls-1" d="M34,46H19a1,1,0,0,0,0,2H34a1,1,0,0,0,0-2Z"/>
+    <path id="Path_403" data-name="Path 403" class="cls-1" d="M34,52H19a1,1,0,0,0,0,2H34a1,1,0,0,0,0-2Z"/>
+    <path id="Path_404" data-name="Path 404" class="cls-1" d="M39,54H53V40H39Zm2-12H51V52H41Z"/>
+    <path id="Path_405" data-name="Path 405" class="cls-1" d="M59,13c0-.017-.009-.031-.01-.048V0H11V30H1V54a6.006,6.006,0,0,0,6,6H53a6,6,0,0,0,5.99-5.99V13.048C58.991,13.031,59,13.017,59,13ZM56.99,2V12H13V2ZM3,54V32h8V54a4,4,0,0,1-8,0Zm50,4H11.469c.016-.018.027-.039.042-.057a5.961,5.961,0,0,0,.556-.745c.027-.042.052-.084.078-.128a5.881,5.881,0,0,0,.423-.848c.016-.041.03-.082.045-.123a5.94,5.94,0,0,0,.273-.949c.006-.03.008-.061.014-.09A5.97,5.97,0,0,0,13,54V14H56.99V54.01A4,4,0,0,1,53,58Z"/>
+    <path id="Path_406" data-name="Path 406" class="cls-1" d="M47,4H23v6H47ZM45,8H25V6H45Z"/>
+  </g>
+</svg>
